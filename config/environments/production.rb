@@ -76,14 +76,15 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
-    config.action_mailer.delivery_method = :smtp
-    config.action_mailer.perform_deliveries = true
-    config.action_mailer.raise_delivery_errors = true
     config.cache_classes = true
     config.assets.precompile = [/^[-_a-zA-Z0-9]*\..*/]
     config.assets.compile = true
     config.assets.digest = true
+
+
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.perform_deliveries = true
+    config.action_mailer.raise_delivery_errors = true
 
 
   config.action_mailer.smtp_settings = {
@@ -92,8 +93,8 @@ Rails.application.configure do
     domain: "heroku.com",
     authentication: :plain,
     enable_starttls_auto: true,
-    user_name: ENV['GMAIL_USER'],
-    password: ENV['GMAIL_PASS']
+    user_name: 'ngonz141@gmail.com',
+    password: 'fuckstick1234'
 }
 
 
