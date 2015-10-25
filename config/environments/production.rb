@@ -80,7 +80,7 @@ Rails.application.configure do
     config.assets.precompile = [/^[-_a-zA-Z0-9]*\..*/]
     config.assets.compile = true
     config.assets.digest = true
-
+    config.log_level = :debug
 
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.perform_deliveries = true
