@@ -1,0 +1,409 @@
+@import "bootstrap";
+/* CSS Document */
+
+/* FONT STYLINGS */
+
+h1, h2, h3, h4, li, p {
+	font-family: "Ubuntu", sans-serif;
+}
+
+/* img centering */
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* NAVBAR STYLES */
+
+.navbar-inverse .navbar-nav>.active>a {
+	color: white; 
+	background-color: #b60101;
+}
+	
+.navbar-inverse .navbar-nav>.active>a:hover {
+	background-color: #b60101;
+	opacity: .6;
+}
+	
+.navbar-inverse .navbar-nav>li:hover {
+	background-color: #b60101;
+	opacity: .6;
+}
+	
+.navbar-brand>img {
+    margin: -8px;
+}
+
+.navbar-toggle {
+	margin-right: -15px;
+}
+
+#nav-clear {
+	clear: both;
+}
+
+/* ABOUT ME STYLES */
+
+#about-me {
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    margin: 20px 0;
+    padding: 25px;
+    text-align: center; 
+	bottom: 105px;
+	border-radius: 30px;
+	overflow: hidden;
+}
+	
+#about-me-text {
+	padding: 30px 20px;
+	font-weight:700;
+}
+
+
+#about-me-bg {
+	background: url(<%= asset_path "testbg.jpg"%>) 50% 0 no-repeat;
+	color: white;
+	position: relative; 
+	top: 85px;
+}
+
+
+	
+/* SKILL-BOX STYLES */
+
+#footer-home {
+	margin-top: 90px;
+	border-top: solid #B2B2B2 1px;
+}
+	
+.skill-box {
+	text-align: center;
+}
+
+.skill-box h3 {
+	text-decoration: underline;
+}
+
+.skill-box .glyphicon {
+	font-size: 36px;
+}
+
+/* RESUME STYLING */
+
+.res-head {
+    margin-top: 65px;
+}
+
+#res-photo{
+	margin-top: 25px;	
+}
+
+
+#scroll-bar::-webkit-scrollbar-corner { 
+	background-color: #999;
+}
+
+#scroll-bar::-webkit-resizer { 
+background-color: #666;
+}
+
+
+#work-exp-img {
+	margin-top: 20px;
+}
+
+#work-exp {
+	padding-left: 35px;
+}
+	
+.work-exp-title {
+	font-weight: bold;
+	margin-top: 25px;
+}
+
+.work-exp-border {
+	border-bottom: solid #B2B2B2 1px; 	
+}
+
+#res-skill h3 {
+	text-align: center;
+	margin-top: 44px;
+	border-bottom: solid #B2B2B2 1px ;	
+}
+
+
+/*PORTFOLIO STYLING*/
+
+#port-header{
+	margin-top: 45px;
+	border-bottom: solid #B2B2B2 1px;
+	}
+
+#portfolio{
+	margin-top: 30px;	
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: .8s;
+-moz-animation-delay:.8s;
+animation-delay: .8s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 1.3s;
+-moz-animation-delay: 1.3s;
+animation-delay: 1.3s;
+}
+
+
+.thumb-link:hover, .thumb-link:focus, thumb-link:active {
+	border: solid #B2B2B2 1px;
+} 
+
+/* CONTACT FORM STYLING */
+
+	
+.form-control:focus{
+	border-color: #b60101
+}
+
+#contact {
+	margin-top: 110px;
+} 
+
+#contact-bg {
+	padding: 35px;
+}
+
+#contact-text {	
+	margin: 0 45px;
+}
+
+#contact-submit-text {
+	padding-bottom: 3px;	
+} 
+
+.btn-success {
+	margin-top: 15px;
+}
+	
+.btn-danger {
+	margin-top: 15px;
+    color: #fff;
+    background-color: #b60101;
+    border-color: #b60101;
+}
+
+.btn-danger:hover {
+	background-color: black;
+	opacity: .4;
+	-webkit-animation:spin .25s linear;
+    -moz-animation:spin .25s linear;
+    animation:spin .25s linear;
+}
+
+#call-button {
+	margin-left: 40px;
+}
+
+/*MEDIA QUERIES FOR MEDIUM DEVICES*/
+@media (max-width:1199px) {
+
+#about-me-bg {
+	min-height: 0px;
+}
+
+#about-me-text {
+	margin-top: 20px;
+	} 
+
+#cus-skill {
+	margin:0 25px;
+}	
+} 
+
+/* MEDIA QUERIES FOR SMALL DEVICES */	
+@media (max-width:991px) {
+
+
+#about-me-text {
+	margin-top: 0;
+	} 
+
+#about-me-text h3 {
+	font-size: 1.3em;
+}
+		
+#about-me-text h2 {
+	font-size: 1.7em;
+}
+
+#cus-skill {
+	margin:00;
+}
+	
+#dev-skill {
+	margin:0 1.5em;
+}
+	
+#tech-skill {
+	margin:0 20px;
+}
+} 
+	
+/* MEDIA QUERIES FOR EXTRA-SMALL DEVICES*/ 
+@media (max-width:767px){
+
+#about-me {
+	margin: 10px 0;
+	min-height: 380px;
+}
+
+#about-me-bg {
+	min-height: 450px; 
+	top: 85px;
+}
+
+
+#about-me-text {
+	padding: 0;
+}
+
+#about-me-text h2 {
+	font-size: 1.5em;
+}
+
+#about-me-text h3 {
+	font-size: 1.2em;
+}
+		
+#dev-skill {
+	margin:00;
+}
+	
+#tech-skill {
+	margin:00;
+}
+
+.skill-box {
+	border-top: solid #B2B2B2 1px;
+	margin: 20px 60px;
+}
+
+.skill-box h3 {
+	 font-size: 1.1em;
+}	
+	 
+.skill-box h4 {
+	font-size: 1.2em;
+}
+	 
+#footer-home {
+	border-top: solid black0;
+	margin-top: 50px;
+}
+
+#res-photo {
+	padding: 0 0 0 175px;;
+} 
+
+#work-exp-img {
+	padding-left: 197px;
+	margin-top:-50px;
+}
+
+}
+
+/* MISC MEDIA QUERY TO SOLVE ABOUT ME IMAGE ALIGNMENT ISSUE*/ 
+
+@media (max-width:644px){
+	
+#img-fix{
+	padding: 0 0;	
+}
+
+#res-photo{
+	padding: 0 110px;
+}
+
+#work-exp-img {
+	padding-left: 130px;
+}
+
+}
+
+/* MISC MEDIA QUERIES FOR SUPER-XS DEVICES*/ 
+
+@media (max-width:604px) {
+
+.skillbox {
+	margin:0
+}
+	
+#about-me-text h2 {
+	font-size: 1.4em;
+}
+
+#about-me-text h3 {
+	font-size: 1.2em;
+}
+
+.skill-box {
+	border-top: solid #B2B2B2 1px;
+	margin: 20px 20px;
+}
+}
+
+@media (max-width:500px) {
+
+#res-photo{
+	padding: 0 40px;
+}
+
+#work-exp-img {
+	padding: 0 50px;
+}
+	
+}
+
+
+@media (max-width:384px){
+#res-photo{
+	padding: 0 0;
+}	
+.navbar-brand>img {
+    margin: -5px;
+}
+
+#work-exp-img {
+	padding: 0 0;
+}
+	
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RedBearStudios</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+<head>
+
+
+
+<!--GOOGLE FONTS -->
+
+<link rel="icon" type="image/png" href="imgs/favicon-16x16.png" sizes="16x16">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Red Bear Studios</title>
+</head>
+<body>
+<%= render 'layouts/navbar' %> 
+  <% if flash[:notice] %>
+      <%= flash[:notice] %>
+    </p>
+  <% end %>
+
+<%= yield %>
+
+</body>
+
+
+
+</html>
