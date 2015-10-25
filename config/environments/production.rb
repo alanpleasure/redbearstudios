@@ -88,13 +88,13 @@ Rails.application.configure do
 
 
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
+    address: "smtp.mandrillapp.com",
     port: 587,
     domain: "heroku.com",
     authentication: :plain,
     enable_starttls_auto: true,
     user_name: 'nickgtech@gmail.com',
-    password: 'fuckstick'
+    password: 'mnF3qYeXxPtKWObggF_Nig'
 }
 
 
